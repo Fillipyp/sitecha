@@ -94,13 +94,13 @@
                 grid-template-columns: 1fr;
                 text-align: center
             }
-            
+
         }
 
         h1 {
             font-family: Marcellus, serif;
             font-weight: 400;
-            font-size: clamp(28px, 5.2vw, 56px);
+            font-size: clamp(40px, 5.2vw, 56px);
             line-height: 1.05;
             margin: 14px 0
         }
@@ -150,7 +150,7 @@
 
         .soft {
             color: var(--muted);
-            font-size: 14px
+            font-size: 16px
         }
 
         .photo-wrap {
@@ -160,22 +160,36 @@
         }
 
         .photo-card {
-  width: min(550px, 90vw); /* padrão desktop/tablet */
-  aspect-ratio: 4/3;
-  border-radius: var(--radius);
-  background: var(--beige-2);
-  overflow: hidden;
-  box-shadow: var(--shadow);
-  border: 1px solid rgba(0, 0, 0, .06);
-}
+            width: min(550px, 90vw);
+            /* padrão desktop/tablet */
+            aspect-ratio: 4/3;
+            border-radius: var(--radius);
+            background: var(--beige-2);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(0, 0, 0, .06);
+        }
 
-/* ajuste para telas pequenas */
-@media (max-width: 640px) {
-  .photo-card {
-    width: 280px;     /* trava num tamanho menor */
-    max-width: 90vw;  /* garante que não ultrapasse a largura */
-  }
-}
+        /* ajuste para telas pequenas */
+        @media (max-width: 640px) {
+            .photo-card {
+                width: 280px;
+                /* trava num tamanho menor */
+                max-width: 90vw;
+                /* garante que não ultrapasse a largura */
+            }
+
+            .floating-badge {
+                position: static !important;
+                /* sai do canto da foto */
+                margin-top: 10px;
+                font-size: 14px;
+                /* diminui fonte */
+                padding: 8px 12px;
+                /* menor altura/largura */
+                align-self: center;
+            }
+        }
 
 
         .photo-card img {
@@ -194,7 +208,7 @@
             color: #fff;
             padding: 10px 14px;
             border-radius: 14px;
-            font-weight: 600;
+            font-weight: 500;
             box-shadow: var(--shadow)
         }
 
@@ -491,9 +505,13 @@
             <div class="hero-grid">
                 <div>
                     <h1 data-anim="fade-up">Bruna & Fillipy</h1>
-                    <p class="lead" data-anim="fade-up" style="animation-delay:.06s">Aqui
+                    <p class="lead" data-anim="fade-up" style="animation-delay:.06s">
+                        Estamos muito felizes em viver este
+                            momento tão especial e queremos compartilhar com vocês. Aqui
                         você encontra informações sobre o evento e uma lista de presentes para nos ajudar a montar o
-                        nosso lar. Fique à vontade para reservar um item (ou mais).</p>
+                        nosso lar. Fique à vontade para reservar um item (ou mais)
+                            
+                            </p>
                     <div class="cta-row" data-anim="fade-up" style="animation-delay:.12s">
                         <a class="btn btn-primary" href="#lista" title="Ver lista de presentes">Ver lista</a>
                         <a class="btn btn-ghost" href="#evento" title="Informações do evento">Informações do Evento</a>
@@ -515,9 +533,8 @@
             <div class="container">
                 <div class="section-head">
                     <div>
-                        <h2 style="margin:0; font-family: Marcellus, serif">Bem-vindos ao nosso cantinho 💚</h2>
-                        <p class="soft" style="margin-top:6px; max-width:68ch">Estamos muito felizes em viver este
-                            momento tão especial e queremos compartilhar com vocês. O nosso Chá de Janela é uma forma de
+                        <h2 style="margin:0; font-family: Marcellus, serif;">Bem-vindos ao nosso cantinho 💚</h2>
+                        <p class="soft" style="margin-top:6px; max-width:65ch">O nosso Chá de Janela é uma forma de
                             unir carinho, amizade e os primeiros passos da nossa vida a dois. Obrigado por fazer parte
                             dessa história!</p>
                     </div>
