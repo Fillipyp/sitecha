@@ -94,6 +94,7 @@
                 grid-template-columns: 1fr;
                 text-align: center
             }
+            
         }
 
         h1 {
@@ -159,14 +160,23 @@
         }
 
         .photo-card {
-            width: min(480px, 90vw);
-            aspect-ratio: 4/3;
-            border-radius: var(--radius);
-            background: var(--beige-2);
-            overflow: hidden;
-            box-shadow: var(--shadow);
-            border: 1px solid rgba(0, 0, 0, .06)
-        }
+  width: min(480px, 90vw); /* padrão desktop/tablet */
+  aspect-ratio: 4/3;
+  border-radius: var(--radius);
+  background: var(--beige-2);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(0, 0, 0, .06);
+}
+
+/* ajuste para telas pequenas */
+@media (max-width: 640px) {
+  .photo-card {
+    width: 300px;     /* trava num tamanho menor */
+    max-width: 90vw;  /* garante que não ultrapasse a largura */
+  }
+}
+
 
         .photo-card img {
             width: 100%;
