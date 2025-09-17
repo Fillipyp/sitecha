@@ -507,11 +507,11 @@
                     <h1 data-anim="fade-up">Bruna & Fillipy</h1>
                     <p class="lead" data-anim="fade-up" style="animation-delay:.06s">
                         Estamos muito felizes em viver este
-                            momento tão especial e queremos compartilhar com vocês. Aqui
+                        momento tão especial e queremos compartilhar com vocês. Aqui
                         você encontra informações sobre o evento e uma lista de presentes para nos ajudar a montar o
                         nosso lar. Fique à vontade para reservar um item (ou mais)
-                            
-                            </p>
+
+                    </p>
                     <div class="cta-row" data-anim="fade-up" style="animation-delay:.12s">
                         <a class="btn btn-primary" href="#lista" title="Ver lista de presentes">Ver lista</a>
                         <a class="btn btn-ghost" href="#evento" title="Informações do evento">Informações do Evento</a>
@@ -548,8 +548,9 @@
                 <div class="section-head">
                     <div>
                         <h2 id="titulo-lista" style="margin:0; font-family: Marcellus, serif">Lista de Presentes</h2>
-                        <p class="soft" style="margin-top:6px">Escolha e reserve. Para desmarcar, será necessário
-                            digitar a senha cadastrada.</p>
+                        <p class="soft" style="margin-top:6px">Para reservar um presente, escolha o item e digite uma senha.
+Essa senha serve para garantir que o presente fique salvo em seu nome.
+Se mudar de ideia, basta usar a mesma senha para cancelar a reserva.</p>
                     </div>
                     <div class="controls" role="search">
                         <input id="busca" class="input" type="search" placeholder="Buscar presente…"
@@ -645,12 +646,12 @@
         // ====== Dados da Lista ======
         // ====== Dados da Lista ======
         const GIFTS = [
-            { id: 'p1', nome: 'Conjunto de copos (6 un.)', img: 'imagens/copos.jpg' },
-            { id: 'p2', nome: 'Cabides (10 un.)', img: 'imagens/cabides.jpg' },
+            { id: 'p1', nome: 'Conjunto de copos', img: 'imagens/copos.jpg' },
+            { id: 'p2', nome: 'Cabides ', img: 'imagens/cabides.jpg' },
             { id: 'p3', nome: 'Edredom casal', img: 'imagens/edredom.jpg' },
-            { id: 'p4', nome: 'Forma de gelo (2 un.)', img: 'imagens/forma_gelo.jpg' },
+            { id: 'p4', nome: 'Forma de gelo', img: 'imagens/forma_gelo.jpg' },
             { id: 'p5', nome: 'Funil de cozinha', img: 'imagens/funil.jpg' },
-            { id: 'p6', nome: 'Conjunto de cuias (12 un.)', img: 'imagens/cuia.jpg' },
+            { id: 'p6', nome: 'Conjunto de cuias ', img: 'imagens/cuia.jpg' },
             { id: 'p7', nome: 'Garrafa de café térmica', img: 'imagens/garrafa_cafe.jpg' },
             { id: 'p8', nome: 'Jogo de lençol casal', img: 'imagens/lencol.jpg' },
             { id: 'p9', nome: 'Almofadas decorativas', img: 'imagens/almofadas.jpg' },
@@ -662,12 +663,11 @@
             { id: 'p15', nome: 'Moedor de pimenta', img: 'imagens/moedor_pimenta.png' },
             { id: 'p16', nome: 'Mop de limpeza', img: 'imagens/mop.png' },
             { id: 'p17', nome: 'Panela elétrica de feijão', img: 'imagens/panela_feijao_eletrica.png' },
-            { id: 'p18', nome: 'Panos de prato (3 un.)', img: 'imagens/pano_prato.png' },
-            { id: 'p19', nome: 'Potes de plástico (12 un.)', img: 'imagens/potes.png' },
-            { id: 'p20', nome: 'Jogo de pratos rasos (6 un.)', img: 'imagens/prato_reto.png' },
-            { id: 'p21', nome: 'Taças de vidro (6 un.)', img: 'imagens/tacas.png' },
-            { id: 'p22', nome: 'Toalhas de banho (2 un.)', img: 'imagens/toalhas_banho.png' },
-            { id: 'p23', nome: 'Toalhas de banho (4 un.)', img: 'imagens/toalhas_banho2.png' },
+            { id: 'p18', nome: 'Panos de prato', img: 'imagens/pano_prato.png' },
+            { id: 'p19', nome: 'Potes de plástico ', img: 'imagens/potes.png' },
+            { id: 'p20', nome: 'Jogo de pratos rasos', img: 'imagens/prato_reto.png' },
+            { id: 'p21', nome: 'Taças de vidro', img: 'imagens/tacas.png' },
+            { id: 'p23', nome: 'Toalhas de banho', img: 'imagens/toalhas_banho2.png' },
             { id: 'p24', nome: 'Ventilador de mesa', img: 'imagens/ventilador.png' },
             { id: 'p25', nome: 'Abajur simples', img: 'imagens/abajur.png' },
             { id: 'p26', nome: 'Luminária de escritório', img: 'imagens/luminaria_escritorio.png' },
@@ -677,11 +677,58 @@
             { id: 'p30', nome: 'Panela de pressão (indução)', img: 'imagens/panela_pressao_inducao.png' },
             { id: 'p31', nome: 'Centrífuga de legumes', img: 'imagens/centrifuga_legumes.jpg' },
             { id: 'p32', nome: 'Kit lavabo', img: 'imagens/kit_lavabo.jpg' },
-            { id: 'p33', nome: 'Jogo americano (6 un.)', img: 'imagens/jogo_mesa_americano.jpg' },
+            { id: 'p33', nome: 'Jogo americano', img: 'imagens/jogo_mesa_americano.jpg' },
             { id: 'p34', nome: 'Luva térmica', img: 'imagens/luva_termica.jpg' },
-            { id: 'p35', nome: 'Jogo de facas (5 un.)', img: 'imagens/facas.png' },
-            { id: 'p36', nome: 'Xícaras (4 un.)', img: 'imagens/xicaras.jpg' },
+            { id: 'p35', nome: 'Jogo de facas', img: 'imagens/facas.png' },
+            { id: 'p36', nome: 'Xícaras', img: 'imagens/xicaras.jpg' },
+
+            { id: 'p37', nome: 'Abridor de garrafas e latas', img: 'imagens/abridor_garrafa.jpg' },
+            { id: 'p38', nome: 'Açucareiro', img: 'imagens/açucareiro.jpg' },
+            { id: 'p39', nome: 'Afiador de facas', img: 'imagens/afiador_facas.jpg' },
+            { id: 'p40', nome: 'Assadeira antiaderente', img: 'imagens/assadeira.png' },
+            { id: 'p41', nome: 'Balde e pinça de gelo', img: 'imagens/balde.png' },
+            { id: 'p42', nome: 'Batedor de ovos', img: 'imagens/batedor_ovos.jpg' },
+            { id: 'p43', nome: 'Bowls', img: 'imagens/bowls.png' },
+            { id: 'p44', nome: 'Coador', img: 'imagens/coador.png' },
+            { id: 'p45', nome: 'Colheres de pau', img: 'imagens/colher_de_pau.jpg' },
+            { id: 'p46', nome: 'Concha para molho', img: 'imagens/concha_molho.jpg' },
+            { id: 'p47', nome: 'Concha para sorvete', img: 'imagens/concha_sorvete.jpg' },
+            { id: 'p48', nome: 'Conjunto de copos adicionais', img: 'imagens/copos_2.png' },
+            { id: 'p49', nome: 'Cortador de pizza', img: 'imagens/cortador_pizza.png' },
+            { id: 'p50', nome: 'Cumbuca', img: 'imagens/cumbuca_bambu.png' },
+            { id: 'p51', nome: 'Descanso de panelas', img: 'imagens/descanso_panela.jpg' },
+            { id: 'p52', nome: 'Escorredor de macarrão', img: 'imagens/escorredor_macarrao.jpg' },
+            { id: 'p53', nome: 'Espátula', img: 'imagens/espatulas.jpg' },
+            { id: 'p55', nome: 'Espremedor de batatas', img: 'imagens/espremedor_batata.png' },
+            { id: 'p56', nome: 'Espremedor de limão', img: 'imagens/espremedor_limao.png' },
+            { id: 'p57', nome: 'Forma de bolo', img: 'imagens/forma_bolo.jpg' },
+            { id: 'p58', nome: 'Forma para pizza', img: 'imagens/forma_pizza.png' },
+            { id: 'p59', nome: 'Jarra para suco', img: 'imagens/jarra.jpg' },
+            { id: 'p60', nome: 'Kit talheres', img: 'imagens/kit_talheres.png' },
+            { id: 'p61', nome: 'Liquidificador', img: 'imagens/liquidificador.png' },
+            { id: 'p62', nome: 'Lixeira para pia', img: 'imagens/lixeira_pia.jpg' },
+            { id: 'p63', nome: 'Mantegueira', img: 'imagens/mantegueira.jpg' },
+            { id: 'p64', nome: 'Pá de lixo', img: 'imagens/pá_lixo.png' },
+            { id: 'p65', nome: 'Paliteiro', img: 'imagens/paliteiro.jpg' },
+            { id: 'p66', nome: 'Pegador de massa', img: 'imagens/pegador_massa.png' },
+            { id: 'p67', nome: 'Pegador de salada', img: 'imagens/pegador_salada.png' },
+            { id: 'p68', nome: 'Petisqueira', img: 'imagens/petisqueira.png' },
+            { id: 'p69', nome: 'Pirex', img: 'imagens/pirex.png' },
+            { id: 'p70', nome: 'Porta chaves', img: 'imagens/porta_chaves.png' },
+            { id: 'p71', nome: 'Porta frios', img: 'imagens/porta_frios.jpg' },
+            { id: 'p72', nome: 'Porta temperos', img: 'imagens/porta_temperos.png' },
+            { id: 'p73', nome: 'Potes', img: 'imagens/potes.png' },
+            { id: 'p74', nome: 'Queijeira', img: 'imagens/queijeira.jpg' },
+            { id: 'p75', nome: 'Ralador', img: 'imagens/ralador.jpg' },
+            { id: 'p76', nome: 'Rodo para pia', img: 'imagens/rodo_pia.jpg' },
+            { id: 'p77', nome: 'Tábua de cozinha', img: 'imagens/tabua_cozinha.png' },
+            { id: 'p78', nome: 'Tesoura de cozinha', img: 'imagens/tesoura_cozinha.png' },
+            { id: 'p79', nome: 'Toalha de rosto', img: 'imagens/toalhas_banho.png' },
+            { id: 'p80', nome: 'Torradeira elétrica', img: 'imagens/torradeira_eletrica.png' },
+            { id: 'p81', nome: 'Travesseiro', img: 'imagens/travesseiro.png' }
         ];
+
+
 
 
 
@@ -852,4 +899,3 @@
 </body>
 
 </html>
-
